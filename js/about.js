@@ -7,7 +7,7 @@ const team = [
   {
     name: "Alfaiz raza",
     edu: "BCA Final Year",
-    image: "https://dummyimage.com/80x80",
+    image: "../images/alfaiz.jpeg",
   },
   {
     name: "Sehjan Baig",
