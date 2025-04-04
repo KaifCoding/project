@@ -17,7 +17,7 @@ const team = [
   {
     name: "Khushboo Verma",
     edu: "BCA Final Year",
-    image: "https://dummyimage.com/80x80",
+    image: "../images/khushboo.jpeg",
   },
   {
     name: "Aarti Meena",
