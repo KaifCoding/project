@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Business - IndiaNews</title>
+    <link href="../css/tailwind.min.css" rel="stylesheet" />
+    <link href="../css/global.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- NavBar  -->
+    <div hx-get="../components/Navbar.html" hx-trigger="load"></div>
+   
+    <section class="text-gray-600 body-font">
+        
+      <div class="container px-5 py-24 mx-auto">
+        <div hx-get="../components/Breadcrumbs.html" hx-trigger="load"></div>
+        <div class="flex flex-wrap w-full mb-20">
+          <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+            <h1
+              class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900"
+            >
+              Latest Business News
+            </h1>
+            <div class="h-1 w-20 bg-primary rounded"></div>
+          </div>
+        </div>
+        <div id="business-news-section" class="flex flex-wrap -m-4"></div>
+        <!-- Dynamic Content Here -->
+      </div>
+    </section>
+
+    <!-- Footer  -->
+    <div hx-get="../components/Footer.html" hx-trigger="load"></div>
+
+    <script src="../js/categories.js"></script>
+    <script src="../js/htmx.min.js"></script>
+  </body>
+</html>

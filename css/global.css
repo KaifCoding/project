@@ -1,0 +1,90 @@
+.bg-primary {
+    background-color: #058eff;
+}
+.text-primary {
+    color: #058eff;
+}
+.hover-text-primary:hover{
+    color: #058eff !important;
+}
+.nav-link {
+    position: relative;
+    text-decoration: none;
+    font-weight: bold;
+    padding-bottom: 5px; /* Space for underline */
+    transition: color 0.3s ease-in-out;
+}
+.nav-link.active-link{
+    color:#058eff !important;
+}
+/* Default underline for active link */
+.nav-link.active-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #058eff;
+}
+
+/* Underline effect for all links */
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 50%;  /* Start from center */
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #058eff;
+    transition: width 0.5s ease-in-out, left 0.5s ease-in-out;
+}
+
+/* Hover effect - Expands from center */
+.nav-link:hover {
+    color: #058eff !important;
+    background-color: #fff !important;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.news-section .news-card {
+    height: 100%; /* Ensure all cards have the same height */
+    display: flex;
+    flex-direction: column;
+}
+
+.news-section .news-content {
+    flex-grow: 1; /* Makes sure text expands equally */
+}
+
+.news-section img {
+    height: 200px; /* Fixed image height */
+    object-fit: cover; /* Ensure consistent image cropping */
+}
+
+.news-section h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.news-section p {
+    font-size: 0.9rem;
+    color: #555;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Show only 3 lines */
+    -webkit-box-orient: vertical;
+}
+
+.max-container {
+    min-height: 75vh !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

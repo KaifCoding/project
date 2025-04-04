@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IndiaNews - Best News App</title>
+    <link href="./css/tailwind.min.css" rel="stylesheet" />
+    <link href="./css/global.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- NavBar  -->
+    <div hx-get="./components/Navbar.html" hx-trigger="load"></div>
+    <!-- Hero Section  -->
+    <section class="text-gray-600 body-font">
+      <div
+        class="container mx-auto flex px-5 py-24 items-center justify-center flex-col"
+      >
+        <img
+          class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded"
+          alt="hero"
+          src="https://dummyimage.com/720x600"
+        />
+        <div class="text-center lg:w-2/3 w-full">
+          <h1
+            class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900"
+          >
+            IndiaNews
+          </h1>
+          <p class="mb-8 leading-relaxed">
+            IndiaNews delivers real-time updates, in-depth stories, and trusted
+            journalism. Covering business, entertainment, sports, health, and
+            technology, we bring accurate, insightful reporting. Whether
+            breaking news or expert analysis, our platform keeps you informed.
+            With credibility, speed, and transparency, IndiaNews is your go-to
+            source for stories that matter. Stay ahead, stay updated!
+          </p>
+          <div class="flex justify-center">
+            <a
+              href="/categories/"
+              class="inline-flex text-white bg-primary border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg"
+              >Categories</a
+            >
+            <a
+              href="/sources/"
+              class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg"
+              >Sources</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Letest News Section -->
+    <section class="text-gray-600 body-font">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-wrap w-full mb-20">
+          <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+            <h1
+              class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900"
+            >
+              Latest News
+            </h1>
+            <div class="h-1 w-20 bg-primary rounded"></div>
+          </div>
+        </div>
+        <div id="article-container" class="flex flex-wrap -m-4"></div>
+        <!-- Dynamic Content Here -->
+      </div>
+    </section>
+    <div hx-get="./components/Footer.html" hx-trigger="load"></div>
+    <script src="./js/htmx.min.js"></script>
+    <script src="./js/news.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
