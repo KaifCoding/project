@@ -2,7 +2,7 @@ const team = [
   {
     name: "Mohammad Kaif",
     edu: "BCA Final Year",
-    image: "https://dummyimage.com/80x80",
+    image: "../images/kaif.jpg",
   },
   {
     name: "Alfaiz raza",
@@ -12,7 +12,7 @@ const team = [
   {
     name: "Sehjan Baig",
     edu: "BCA Final Year",
-    image: "https://dummyimage.com/80x80",
+    image: "../images/sehjan.jpeg",
   },
   {
     name: "Khushboo Verma",
