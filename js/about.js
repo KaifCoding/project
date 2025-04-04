@@ -22,7 +22,7 @@ const team = [
   {
     name: "Aarti Meena",
     edu: "BCA Final Year",
-    image: "https://dummyimage.com/80x80",
+    image: "../images/aarti.jpeg",
   },
 ];
 
